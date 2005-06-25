@@ -24,8 +24,6 @@ type
   end;//TMainLink
 
   
-  
-
 var
   cmdcall : TCmdCall;
   options : PPChar;
@@ -37,6 +35,7 @@ var
   oneword : string;
   found : boolean;
   MaxDepth : integer;
+  output : text;
 begin
 
   if ParamCount<2 then begin
@@ -74,18 +73,38 @@ begin
     cmdcall.call(options);
     j := 1;
     for i:=1 to length(cmdcall.OutputStr) do begin
-      if cmdcall.OutputStr[i]=#0 then begin
+      if cmdcall.OutputStr[i]=':' then begin
         oneword := trim(Copy(cmdcall.OutputStr, j, i-j));
+        j := i+1;
+        
+        if oneword=current^.data then continue;
+        
         if oneword<>'' then begin
+
+          list := new(PLinkedList);
+          list^.next := nil;
+          list^.data := oneword;
+          if current^.neibours=nil then begin
+            current^.neibours := list;
+          end else begin
+            iter := current^.neibours;
+            while iter^.next<>nil do begin
+              iter := iter^.next;
+            end;
+            iter^.next := list;
+          end;
+
           //check if oneword is already in the mainlink
           travers := @graph;
           found := false;
-          while travers^.next<>nil do begin
+          repeat
             if travers^.data=oneword then begin
               found := true;
-              exit;
+              break;
             end;
-          end;//while
+            travers := travers^.next;
+          until travers=nil;
+          
           if (not found) and (current^.depth<MaxDepth) then begin
             travers := new(PMainLink);
             travers^.data := oneword;
@@ -94,27 +113,34 @@ begin
             travers^.neibours := nil;
             tail^.next := travers;
             tail := travers;
-          end else begin
-            list := new(PLinkedList);
-            if current^.neibours=nil then begin
-              list^.next := nil;
-              list^.data := oneword;
-              current^.neibours := list;
-            end else begin
-              iter := current^.neibours;
-              while iter^.next<>nil do begin
-                iter := iter^.next;
-              end;
-              iter^.next := list;
-            end;
           end;
+
         end;
+      end else if (cmdcall.OutputStr[i]=#10) then begin
+        j := i+1;
       end;
     end;//for i
     
-  until current^.next = nil;
+    current := current^.next;
+  until current = nil;
 
-
+  Assign(output, 'output.data');
+  ReWrite(output);
+  current := @graph;
+  repeat
+    write(output, current^.data);
+    iter := current^.neibours;
+    if iter<>nil then begin
+      repeat
+        write(output, ' ', iter^.data);
+        iter := iter^.next;
+      until iter=nil;
+    end;
+    writeln(output);
+    current := current^.next;
+  until current=nil;
+  close(output);
+  
   cmdcall.Free;
   
   FreeMem(options);
