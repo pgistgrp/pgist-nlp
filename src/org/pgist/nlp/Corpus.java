@@ -59,7 +59,6 @@ public class Corpus {
             ""+count,
             word.getName()
         };
-        System.out.println("hello, "+cmdarray[7]);
         
         Process process = runtime.exec(cmdarray);
         
