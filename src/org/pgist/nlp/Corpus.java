@@ -59,6 +59,7 @@ public class Corpus {
             ""+count,
             word.getName()
         };
+        System.out.println("hello, "+cmdarray[7]);
         
         Process process = runtime.exec(cmdarray);
         
@@ -75,6 +76,20 @@ public class Corpus {
             newWord.setLevel(newLevel);
             list.add(newWord);
         }//while
+        
+        if (list.size()>0) {
+            Word first = (Word) list.get(0);
+            if (!first.getName().equals(word.getName())) {
+                for (int i=0; i<list.size(); i++) {
+                    Word one = (Word) list.get(i);
+                    if (one.getName().equals(word.getName())) {
+                        one = (Word) list.remove(i);
+                        list.add(0, one);
+                        break;
+                    }
+                }
+            }
+        }
         
         return list;
     }

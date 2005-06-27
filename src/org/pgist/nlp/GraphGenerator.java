@@ -50,24 +50,27 @@ public class GraphGenerator {
         try {
             while (!stack.empty()) {
                 Word oneWord = (Word)stack.pop();
+                System.out.println(oneWord.getName()+" --> "+oneWord.getLevel());
                 
-                List edgeList = corpus.associate(oneWord, 10);
+                List edgeList = corpus.associate(oneWord, 5);
+                if (edgeList.size()==0) continue;
                 vertexList.add(edgeList);
+                System.out.println("--> "+((Word)(edgeList.get(0))).getName());
 
                 for (int i=0; i<edgeList.size(); i++) {
                     
                     Word word = (Word) edgeList.get(i);
+                    if (word.getName().equals(oneWord.getName())) continue;
                     if (word.getLevel()<=MAX_LEVEL && !set.contains(word.getName())) {
                         stack.push(word);
                         set.add(word.getName());
                     }
                     
-                    //System.out.println(word.getName()+" --> "+word.getLevel());
-                    
                 }//for i
             }//while
         } catch(Exception e) {
             e.printStackTrace();
+            return;
         }
         
         try {
@@ -93,7 +96,10 @@ public class GraphGenerator {
             writer.close();
         } catch(Exception e) {
             e.printStackTrace();
+            return;
         }
+        
+        System.out.println(set);
     }
     
 
