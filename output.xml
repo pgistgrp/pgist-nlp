@@ -1,0 +1,2289 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE TOUCHGRAPH_LB [
+
+<!ELEMENT TOUCHGRAPH_LB (NODESET, EDGESET, PARAMETERS)>
+<!ELEMENT NODESET (NODE+)>
+<!ELEMENT EDGESET (EDGE*)>
+<!ELEMENT PARAMETERS (PARAM*)>
+
+<!ELEMENT NODE (NODE_LOCATION?, NODE_LABEL?, NODE_URL?, NODE_HINT?)>
+
+<!ELEMENT NODE_LABEL EMPTY>
+<!ELEMENT NODE_URL EMPTY>
+<!ELEMENT NODE_HINT EMPTY>
+
+<!ATTLIST TOUCHGRAPH_LB
+  version CDATA #REQUIRED >
+
+<!ATTLIST NODE
+  nodeID CDATA #REQUIRED >
+
+<!ATTLIST NODE_LOCATION
+  visible CDATA #IMPLIED
+  x CDATA #IMPLIED
+  y CDATA #IMPLIED >
+
+<!ATTLIST NODE_LABEL
+  label CDATA #REQUIRED 
+  shape CDATA #IMPLIED
+  backColor CDATA #IMPLIED 
+  textColor CDATA #IMPLIED
+  fontSize CDATA #IMPLIED >
+
+<!ATTLIST NODE_URL 
+  url CDATA #REQUIRED 
+  urlIsLocal CDATA #IMPLIED 
+  urlIsXML CDATA #IMPLIED >
+
+<!ATTLIST NODE_HINT 
+  hint CDATA #REQUIRED 
+  height CDATA #IMPLIED 
+  width CDATA #IMPLIED 
+  isHTML CDATA #IMPLIED >  
+
+<!ELEMENT EDGE EMPTY>
+
+<!ATTLIST EDGE
+  fromID CDATA #REQUIRED
+  toID CDATA #REQUIRED 
+  length CDATA #IMPLIED 
+  color CDATA #IMPLIED 
+  type CDATA #IMPLIED
+  visible CDATA #IMPLIED >
+
+<!ELEMENT PARAM EMPTY>
+
+<!ATTLIST PARAM
+  name CDATA #REQUIRED
+  value CDATA #REQUIRED >
+]>
+<TOUCHGRAPH_LB version="1.20">
+    <NODESET>
+        <NODE nodeID="pretend">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="pretend" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="dragged">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="dragged" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="fifty">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="fifty" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="hate">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="hate" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="toyota">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="toyota" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="salem">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="salem" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="bleak">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="bleak" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="casey">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="casey" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="prefer">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="prefer" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="caprices">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="caprices" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="carlo">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="carlo" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="simulator">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="simulator" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="pump">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="pump" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="spelled">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="spelled" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="chuckled">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="chuckled" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="preferred">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="preferred" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="trivial">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="trivial" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="mobility">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="mobility" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="recorded">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="recorded" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="introduction">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="introduction" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="hagerbaumer">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="hagerbaumer" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="suvs">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="suvs" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="sl">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="sl" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="user">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="user" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="panel&apos;s">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="panel&apos;s" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="gallon">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="gallon" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="disrupting">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="disrupting" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="data">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="data" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="ready">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="ready" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="crammed">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="crammed" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="tunnels">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="tunnels" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="whitty">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="whitty" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="efficiency">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="efficiency" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="falling">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="falling" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="eis">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="eis" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="tear">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="tear" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="travels">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="travels" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="chairs">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="chairs" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="inflict">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="inflict" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="sifted">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="sifted" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="patrol">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="patrol" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="digging">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="digging" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="averaged">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="averaged" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="leo">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="leo" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="uploaded">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="uploaded" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="reduces">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="reduces" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="license">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="license" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="drink">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="drink" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="regretting">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="regretting" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="patterns">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="patterns" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="cent">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="cent" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="owning">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="owning" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="acquire">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="acquire" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="architect">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="architect" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="convinced">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="convinced" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="ore">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="ore" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="inflation">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="inflation" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="force&apos;s">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="force&apos;s" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="ditching">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="ditching" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="type">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="type" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="brought">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="brought" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="underlying">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="underlying" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="monte">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="monte" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="bound">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="bound" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="wand">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="wand" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="kent">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="kent" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="displayed">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="displayed" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="adjusted">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="adjusted" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="tax">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="tax" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="malaise">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="malaise" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="odometer">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="odometer" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="impalas">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="impalas" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="commutes">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="commutes" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="patten">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="patten" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="fattened">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="fattened" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="mercury">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="mercury" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="perspective">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="perspective" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="ltds">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="ltds" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="civics">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="civics" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="fragmenting">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="fragmenting" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="keycorp">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="keycorp" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="honda">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="honda" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="nationally">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="nationally" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="researchers">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="researchers" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="experiment">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="experiment" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="km">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="km" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="starr">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="starr" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="escort">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="escort" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="oil">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="oil" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="timetable">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="timetable" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="iran">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="iran" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="rover">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="rover" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="oldsmobile">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="oldsmobile" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="uptick">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="uptick" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="fleet">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="fleet" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="rig">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="rig" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="sippers">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="sippers" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="scenic">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="scenic" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="pontiac">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="pontiac" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="fbi&apos;s">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="fbi&apos;s" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="surging">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="surging" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="accords">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="accords" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="cutlass">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="cutlass" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="waves">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="waves" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="rabbit">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="rabbit" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="devices">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="devices" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="rohrersville">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="rohrersville" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="personalized">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="personalized" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="contested">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="contested" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="guggenheim">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="guggenheim" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="broke">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="broke" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="hybrid">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="hybrid" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="moses">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="moses" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="chase">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="chase" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="brauns">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="brauns" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="metropolis">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="metropolis" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="pledge">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="pledge" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="sends">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="sends" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="plate">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="plate" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="encounter">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="encounter" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="md">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="md" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="york&apos;s">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="york&apos;s" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="transferred">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="transferred" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="jeep">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="jeep" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="subtracts">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="subtracts" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="beartooth">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="beartooth" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="miles">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="miles" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="punched">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="punched" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="smoke">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="smoke" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="haze">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="haze" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="beetle">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="beetle" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="berner">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="berner" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="prius">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="prius" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="shifted">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="shifted" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="collections">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="collections" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="folks">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="folks" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="separately">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="separately" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="pacer">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="pacer" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="corvallis">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="corvallis" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="calculates">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="calculates" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="nuns">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="nuns" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="radio">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="radio" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="firebirds">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="firebirds" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="vw">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="vw" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="force">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="force" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="chevrolets">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="chevrolets" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="hummer">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="hummer" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="saturn">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="saturn" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="computes">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="computes" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="foreign">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="foreign" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="legislator">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="legislator" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="camrys">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="camrys" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="candidates">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="candidates" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="settling">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="settling" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="caution">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="caution" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="police">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="police" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="chevrolet">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="chevrolet" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="comparison">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="comparison" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="guzzlers">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="guzzlers" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="durango">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="durango" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="devastating">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="devastating" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="thinking">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="thinking" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="recording">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="recording" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="costco">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="costco" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="laboratory&apos;s">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="laboratory&apos;s" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="gps">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="gps" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="detroit">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="detroit" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="ford">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="ford" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="electricity">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="electricity" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="attracting">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="attracting" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="consumers">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="consumers" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="proprietary">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="proprietary" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="discourage">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="discourage" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="analysts">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="analysts" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="represented">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="represented" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="preference">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="preference" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="size">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="size" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="plates">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="plates" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="movements">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="movements" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="cherokee">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="cherokee" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="inspiration">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="inspiration" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="cougars">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="cougars" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="fleshing">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="fleshing" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="endure">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="endure" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="cityscape">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="cityscape" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="tougher">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="tougher" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="download">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="download" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="japanese">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="japanese" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="incentives">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="incentives" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="maligned">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="maligned" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="johnson">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="johnson" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="paper">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="paper" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="driver">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="driver" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="volkswagen">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="volkswagen" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="unrealistic">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="unrealistic" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="demonstration">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="demonstration" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="lincoln">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="lincoln" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="mich">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="mich" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="tank">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="tank" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="monolithic">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="monolithic" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="datsun">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="datsun" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="oregon">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="oregon" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="villages">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="villages" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="concept">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="concept" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="math">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="math" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="vega">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="vega" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="announce">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="announce" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="baron">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="baron" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="repeat">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="repeat" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="magic">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="magic" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="calculated">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="calculated" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="leader">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="leader" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="downsized">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="downsized" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="hurled">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="hurled" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="task">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="task" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="day&apos;s">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="day&apos;s" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="brave">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="brave" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="golf">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="golf" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="sealed">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="sealed" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="corvair">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="corvair" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="selling">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="selling" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="pickup">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="pickup" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="fuel">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="fuel" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="burden">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="burden" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="genesis">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="genesis" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="cars">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="cars" shape="3" backColor="606060" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="distinguish">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="distinguish" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="gasoline">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="gasoline" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="fetched">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="fetched" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="locations">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="locations" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="greene">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="greene" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="rv">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="rv" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="iraq">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="iraq" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="february">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="february" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="camaros">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="camaros" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="settled">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="settled" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="ends">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="ends" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="snarl">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="snarl" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="specter">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="specter" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="treats">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="treats" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="curator">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="curator" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="southwind">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="southwind" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="stood">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="stood" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="parachute">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="parachute" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="taxable">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="taxable" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="condition">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="condition" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="recorders">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="recorders" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="robinson">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="robinson" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="tiny">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="tiny" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="arab">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="arab" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="stemmed">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="stemmed" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="autos">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="autos" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="source">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="source" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="ers">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="ers" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="tow">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="tow" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="automotive">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="automotive" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="impala">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="impala" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="practically">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="practically" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="document">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="document" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="abuse">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="abuse" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="intact">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="intact" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="omni">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="omni" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="gradually">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="gradually" shape="3" backColor="D00000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="component">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="component" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="venturing">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="venturing" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="epiphany">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="epiphany" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="freedom">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="freedom" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="gas">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="gas" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="mileage">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="mileage" shape="3" backColor="0000E0" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="reader">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="reader" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="debark">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="debark" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="pinto">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="pinto" shape="3" backColor="A04000" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="tourists">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="tourists" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+        <NODE nodeID="outsized">
+            <NODE_LOCATION x="0" y="0" visible="true"/>
+            <NODE_LABEL label="outsized" shape="3" backColor="FF00FF" textColor="000000" fontSize="16"/>
+        </NODE>
+    </NODESET>
+    <EDGESET>
+        <EDGE fromID="cars" toID="fuel" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="gallon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="gas" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="mileage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="devices" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="brought" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="surging" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="rover" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="introduction" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cars" toID="calculated" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="devices" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="mileage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="researchers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="incentives" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="ready" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="recorders" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="oregon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="force&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="timetable" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="distinguish" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="reader" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="whitty" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="download" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="calculated" toID="recording" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recording" toID="researchers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recording" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recording" toID="inflict" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recording" toID="tear" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recording" toID="reader" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recording" toID="collections" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recording" toID="proprietary" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recording" toID="math" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recording" toID="gradually" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gradually" toID="collections" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gradually" toID="tear" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gradually" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gradually" toID="inflict" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="math" toID="calculates" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="math" toID="taxable" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="math" toID="computes" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="math" toID="displayed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="proprietary" toID="tear" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="proprietary" toID="inflict" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="proprietary" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="proprietary" toID="displayed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="collections" toID="gradually" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="collections" toID="tear" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="collections" toID="fetched" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="collections" toID="inflict" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tear" toID="inflict" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tear" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tear" toID="proprietary" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tear" toID="collections" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inflict" toID="tear" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inflict" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inflict" toID="proprietary" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inflict" toID="collections" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="consumers" toID="tear" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="consumers" toID="inflict" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="consumers" toID="recording" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="consumers" toID="collections" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="download" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="download" toID="reader" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="download" toID="gradually" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="download" toID="collections" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="download" toID="fetched" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="download" toID="tear" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="download" toID="proprietary" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="download" toID="inflict" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="download" toID="displayed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="whitty" toID="task" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="whitty" toID="force&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="whitty" toID="experiment" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="whitty" toID="legislator" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="whitty" toID="download" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="whitty" toID="sifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="whitty" toID="movements" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="whitty" toID="ready" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="whitty" toID="fetched" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="movements" toID="sifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="movements" toID="legislator" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="movements" toID="chairs" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="movements" toID="settling" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sifted" toID="legislator" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sifted" toID="settling" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sifted" toID="chairs" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sifted" toID="contested" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="legislator" toID="chairs" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="legislator" toID="sifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="legislator" toID="settling" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="legislator" toID="movements" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="experiment" toID="timetable" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="experiment" toID="recorders" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="experiment" toID="epiphany" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="experiment" toID="genesis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="task" toID="whitty" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="task" toID="force&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="task" toID="experiment" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="task" toID="force" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="reader" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="reader" toID="gradually" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="reader" toID="download" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="reader" toID="proprietary" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="reader" toID="tear" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="reader" toID="inflict" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="reader" toID="recording" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="reader" toID="researchers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="reader" toID="collections" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="distinguish" toID="incentives" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="distinguish" toID="settling" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="distinguish" toID="perspective" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="distinguish" toID="contested" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="distinguish" toID="document" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="distinguish" toID="sifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="distinguish" toID="ready" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="distinguish" toID="legislator" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="distinguish" toID="chairs" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="document" toID="contested" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="document" toID="perspective" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="document" toID="settling" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="document" toID="incentives" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="perspective" toID="contested" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="perspective" toID="document" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="perspective" toID="settling" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="perspective" toID="incentives" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="timetable" toID="recorders" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="timetable" toID="experiment" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="timetable" toID="february" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="timetable" toID="ready" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="timetable" toID="starr" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="timetable" toID="force&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="timetable" toID="panel&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="timetable" toID="epiphany" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="timetable" toID="genesis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="panel&apos;s" toID="recorders" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="panel&apos;s" toID="timetable" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="panel&apos;s" toID="parachute" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="panel&apos;s" toID="brought" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="starr" toID="thinking" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="starr" toID="experiment" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="starr" toID="timetable" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="starr" toID="fbi&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="february" toID="recorders" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="february" toID="timetable" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="february" toID="experiment" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="february" toID="sifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="force&apos;s" toID="task" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="force&apos;s" toID="whitty" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="force&apos;s" toID="mileage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="force&apos;s" toID="researchers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="force&apos;s" toID="ready" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="force&apos;s" toID="timetable" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="force&apos;s" toID="recorders" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="force&apos;s" toID="distinguish" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="force&apos;s" toID="incentives" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oregon" toID="mileage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oregon" toID="force&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oregon" toID="odometer" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oregon" toID="task" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oregon" toID="calculated" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oregon" toID="ready" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oregon" toID="specter" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oregon" toID="experiment" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oregon" toID="concept" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="concept" toID="fleshing" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="concept" toID="user" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="concept" toID="settled" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="concept" toID="legislator" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="specter" toID="oregon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="specter" toID="force&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="specter" toID="task" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="specter" toID="whitty" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="odometer" toID="gps" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="odometer" toID="candidates" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="odometer" toID="pledge" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="odometer" toID="ready" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorders" toID="timetable" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorders" toID="experiment" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorders" toID="february" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorders" toID="ready" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorders" toID="panel&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorders" toID="force&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorders" toID="starr" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorders" toID="task" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorders" toID="distinguish" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ready" toID="incentives" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ready" toID="distinguish" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ready" toID="sifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ready" toID="settling" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ready" toID="legislator" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ready" toID="movements" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ready" toID="perspective" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ready" toID="contested" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ready" toID="document" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="incentives" toID="distinguish" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="incentives" toID="perspective" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="incentives" toID="contested" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="incentives" toID="document" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="incentives" toID="settling" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="incentives" toID="sifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="incentives" toID="ready" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="incentives" toID="chairs" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="incentives" toID="legislator" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="researchers" toID="recording" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="researchers" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="researchers" toID="reader" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="researchers" toID="math" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="researchers" toID="inflict" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="researchers" toID="collections" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="researchers" toID="download" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="researchers" toID="calculates" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="researchers" toID="taxable" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="suvs" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="ford" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="escort" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="accords" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="camrys" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="pinto" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="vega" toID="component" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="component" toID="averaged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="component" toID="escort" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="component" toID="ltds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="component" toID="lincoln" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="component" toID="durango" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="component" toID="suvs" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="component" toID="brave" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="component" toID="carlo" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="component" toID="monte" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="monte" toID="carlo" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="monte" toID="lincoln" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="monte" toID="durango" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="monte" toID="commutes" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="carlo" toID="monte" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="carlo" toID="lincoln" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="carlo" toID="durango" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="carlo" toID="commutes" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brave" toID="durango" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brave" toID="prius" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brave" toID="datsun" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brave" toID="lincoln" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="durango" toID="lincoln" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="durango" toID="carlo" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="durango" toID="monte" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="durango" toID="patterns" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="lincoln" toID="durango" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="lincoln" toID="carlo" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="lincoln" toID="monte" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="lincoln" toID="ltds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ltds" toID="corvallis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ltds" toID="pacer" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ltds" toID="mich" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ltds" toID="vw" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="averaged" toID="component" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="averaged" toID="carlo" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="averaged" toID="monte" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="averaged" toID="suvs" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pinto" toID="fragmenting" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pinto" toID="ford" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pinto" toID="datsun" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pinto" toID="beetle" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pinto" toID="chevrolet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pinto" toID="rabbit" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pinto" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pinto" toID="selling" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pinto" toID="carlo" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="selling" toID="iraq" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="selling" toID="ford" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="selling" toID="cutlass" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="selling" toID="oldsmobile" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rabbit" toID="uptick" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rabbit" toID="debark" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rabbit" toID="datsun" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rabbit" toID="broke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="chevrolet" toID="ford" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="chevrolet" toID="falling" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="chevrolet" toID="firebirds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="chevrolet" toID="oldsmobile" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="beetle" toID="pinto" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="beetle" toID="corvair" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="beetle" toID="fragmenting" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="beetle" toID="keycorp" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fragmenting" toID="pinto" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fragmenting" toID="autos" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fragmenting" toID="outsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fragmenting" toID="monolithic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="camrys" toID="accords" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="camrys" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="camrys" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="camrys" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="camrys" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="camrys" toID="snarl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="camrys" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="camrys" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="camrys" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="snarl" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="snarl" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="snarl" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="snarl" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="accords" toID="camrys" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="accords" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="accords" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="accords" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="accords" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="accords" toID="snarl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="accords" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="accords" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="accords" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="escort" toID="ltds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="escort" toID="corvallis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="escort" toID="mich" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="escort" toID="chuckled" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="escort" toID="leo" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="escort" toID="vw" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="escort" toID="prefer" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="escort" toID="curator" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="escort" toID="ore" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ore" toID="nuns" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ore" toID="fattened" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ore" toID="pacer" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ore" toID="corvallis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="curator" toID="mich" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="curator" toID="vw" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="curator" toID="prefer" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="curator" toID="fattened" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="prefer" toID="curator" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="prefer" toID="mich" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="prefer" toID="vw" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="prefer" toID="fattened" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="leo" toID="chuckled" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="leo" toID="nuns" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="leo" toID="corvallis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="leo" toID="fattened" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="chuckled" toID="leo" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="chuckled" toID="nuns" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="chuckled" toID="corvallis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="chuckled" toID="fattened" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ford" toID="cutlass" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ford" toID="oldsmobile" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ford" toID="chevrolet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ford" toID="firebirds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ford" toID="pontiac" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ford" toID="iran" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ford" toID="practically" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ford" toID="cougars" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ford" toID="mercury" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mercury" toID="cougars" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mercury" toID="pontiac" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mercury" toID="camaros" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mercury" toID="firebirds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cougars" toID="mercury" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cougars" toID="pontiac" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cougars" toID="camaros" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cougars" toID="firebirds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="practically" toID="iran" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="practically" toID="oldsmobile" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="practically" toID="cutlass" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="practically" toID="firebirds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="iran" toID="oldsmobile" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="iran" toID="cutlass" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="iran" toID="practically" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="iran" toID="firebirds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pontiac" toID="cougars" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pontiac" toID="mercury" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pontiac" toID="firebirds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pontiac" toID="camaros" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="suvs" toID="component" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="suvs" toID="ltds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="suvs" toID="escort" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="suvs" toID="averaged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="suvs" toID="lincoln" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="suvs" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="suvs" toID="brave" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="suvs" toID="carlo" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="suvs" toID="monte" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devastating" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devastating" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devastating" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devastating" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devastating" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devastating" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devastating" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devastating" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devastating" toID="snarl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="malaise" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="malaise" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="malaise" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="malaise" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="malaise" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="malaise" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="malaise" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="malaise" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="malaise" toID="snarl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="recorded" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="separately" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="radio" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="uploaded" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="shifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="gallon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="magic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="pretend" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="wand" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="fuel" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="honda" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="waves" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="introduction" toID="broke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="waves" toID="magic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="waves" toID="pretend" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="waves" toID="wand" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="waves" toID="broke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="waves" toID="debark" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="waves" toID="sippers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="waves" toID="uptick" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="waves" toID="electricity" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="waves" toID="uploaded" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="electricity" toID="sippers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="electricity" toID="uptick" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="electricity" toID="broke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="electricity" toID="magic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sippers" toID="electricity" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sippers" toID="uptick" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sippers" toID="broke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sippers" toID="debark" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="honda" toID="ltds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="honda" toID="lincoln" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="honda" toID="ore" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="honda" toID="candidates" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="honda" toID="pledge" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="honda" toID="durango" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="honda" toID="corvallis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="honda" toID="component" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="honda" toID="pacer" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="wand" toID="magic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="wand" toID="pretend" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="wand" toID="debark" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="wand" toID="uptick" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="wand" toID="broke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="wand" toID="waves" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="wand" toID="sippers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="wand" toID="electricity" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="wand" toID="rabbit" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pretend" toID="magic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pretend" toID="wand" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pretend" toID="debark" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pretend" toID="uptick" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pretend" toID="broke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pretend" toID="waves" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pretend" toID="sippers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pretend" toID="electricity" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pretend" toID="rabbit" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="magic" toID="pretend" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="magic" toID="wand" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="magic" toID="debark" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="magic" toID="uptick" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="magic" toID="broke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="magic" toID="waves" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="magic" toID="sippers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="magic" toID="electricity" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="magic" toID="rabbit" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="shifted" toID="recorded" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="shifted" toID="separately" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="shifted" toID="magic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="shifted" toID="pretend" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="shifted" toID="wand" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="shifted" toID="uploaded" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="shifted" toID="radio" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="shifted" toID="waves" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="shifted" toID="sippers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="uploaded" toID="radio" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="uploaded" toID="recorded" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="uploaded" toID="separately" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="uploaded" toID="magic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="uploaded" toID="pretend" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="uploaded" toID="wand" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="uploaded" toID="waves" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="uploaded" toID="debark" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="uploaded" toID="shifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="radio" toID="uploaded" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="radio" toID="recorded" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="radio" toID="separately" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="radio" toID="magic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="radio" toID="pretend" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="radio" toID="wand" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="radio" toID="waves" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="radio" toID="shifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="radio" toID="debark" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="separately" toID="recorded" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="separately" toID="radio" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="separately" toID="uploaded" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="separately" toID="shifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="separately" toID="introduction" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="separately" toID="magic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="separately" toID="pretend" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="separately" toID="wand" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="separately" toID="waves" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorded" toID="separately" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorded" toID="radio" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorded" toID="uploaded" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorded" toID="shifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorded" toID="introduction" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorded" toID="magic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorded" toID="pretend" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorded" toID="wand" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="recorded" toID="waves" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="snarl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="guggenheim" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="inspiration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="york&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="brought" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="endure" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="york&apos;s" toID="guggenheim" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="york&apos;s" toID="inspiration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="york&apos;s" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="york&apos;s" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="york&apos;s" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="york&apos;s" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="york&apos;s" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="york&apos;s" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="york&apos;s" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inspiration" toID="guggenheim" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inspiration" toID="york&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inspiration" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inspiration" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inspiration" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inspiration" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inspiration" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inspiration" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="inspiration" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guggenheim" toID="inspiration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guggenheim" toID="york&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guggenheim" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guggenheim" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guggenheim" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guggenheim" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guggenheim" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guggenheim" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guggenheim" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="snarl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="guggenheim" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="inspiration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="york&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="brought" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="crammed" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="snarl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="brought" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="guggenheim" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="inspiration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="york&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="sealed" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="unrealistic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="honda" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="gps" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="devices" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="calculated" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="cars" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="size" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="candidates" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="pledge" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="detroit" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="mileage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="cherokee" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="fuel" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rover" toID="jeep" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="jeep" toID="cherokee" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="jeep" toID="detroit" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="jeep" toID="volkswagen" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="jeep" toID="transferred" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="jeep" toID="golf" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="jeep" toID="personalized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="jeep" toID="type" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="jeep" toID="plate" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="jeep" toID="pickup" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pickup" toID="laboratory&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pickup" toID="civics" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pickup" toID="tiny" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="pickup" toID="bound" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="plate" toID="personalized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="plate" toID="plates" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="plate" toID="jeep" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="plate" toID="cherokee" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="type" toID="personalized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="type" toID="jeep" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="type" toID="cherokee" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="type" toID="golf" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="personalized" toID="plates" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="personalized" toID="license" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="personalized" toID="type" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="personalized" toID="golf" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="golf" toID="cherokee" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="golf" toID="jeep" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="golf" toID="volkswagen" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="golf" toID="transferred" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="transferred" toID="jeep" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="transferred" toID="cherokee" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="transferred" toID="volkswagen" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="transferred" toID="golf" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="volkswagen" toID="cherokee" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="volkswagen" toID="jeep" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="volkswagen" toID="golf" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="volkswagen" toID="detroit" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cherokee" toID="jeep" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cherokee" toID="volkswagen" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cherokee" toID="detroit" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cherokee" toID="golf" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cherokee" toID="transferred" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cherokee" toID="personalized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cherokee" toID="type" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cherokee" toID="plate" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cherokee" toID="pickup" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="detroit" toID="cherokee" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="detroit" toID="jeep" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="detroit" toID="volkswagen" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="detroit" toID="golf" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="detroit" toID="transferred" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="detroit" toID="escort" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="detroit" toID="source" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="detroit" toID="casey" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="detroit" toID="ltds" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="casey" toID="toyota" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="casey" toID="prius" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="casey" toID="durango" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="casey" toID="convinced" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="source" toID="detroit" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="source" toID="golf" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="source" toID="jeep" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="source" toID="volkswagen" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="size" toID="toyota" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="size" toID="prius" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="size" toID="volkswagen" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="size" toID="cherokee" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="size" toID="detroit" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="size" toID="jeep" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="size" toID="casey" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="size" toID="type" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="size" toID="driver" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="driver" toID="condition" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="driver" toID="police" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="driver" toID="patrol" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="driver" toID="size" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="unrealistic" toID="gps" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="unrealistic" toID="rover" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="unrealistic" toID="pledge" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="unrealistic" toID="candidates" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="unrealistic" toID="odometer" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="unrealistic" toID="devices" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="unrealistic" toID="calculated" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="unrealistic" toID="honda" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="unrealistic" toID="starr" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="gallon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="fleet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="dragged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="southwind" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="adjusted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="preference" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="md" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="rohrersville" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="venturing" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="averaged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="nationally" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="owning" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="surging" toID="cars" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="owning" toID="represented" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="owning" toID="greene" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="owning" toID="adjusted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="owning" toID="fleet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="owning" toID="stood" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="owning" toID="dragged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="owning" toID="automotive" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="owning" toID="md" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="owning" toID="rohrersville" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="automotive" toID="analysts" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="automotive" toID="caution" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="automotive" toID="ditching" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="automotive" toID="inflation" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="stood" toID="represented" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="stood" toID="greene" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="stood" toID="owning" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="stood" toID="paper" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="greene" toID="owning" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="greene" toID="stood" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="greene" toID="repeat" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="greene" toID="represented" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="represented" toID="stood" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="represented" toID="owning" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="represented" toID="greene" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="represented" toID="travels" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="nationally" toID="cent" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="nationally" toID="smoke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="nationally" toID="drink" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="nationally" toID="brauns" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="nationally" toID="md" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="nationally" toID="rohrersville" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="nationally" toID="bleak" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="nationally" toID="robinson" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="nationally" toID="moses" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="moses" toID="drink" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="moses" toID="smoke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="moses" toID="rv" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="moses" toID="rig" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="robinson" toID="brauns" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="robinson" toID="kent" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="robinson" toID="day&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="robinson" toID="rig" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="bleak" toID="trivial" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="bleak" toID="drink" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="bleak" toID="smoke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="bleak" toID="chase" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brauns" toID="robinson" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brauns" toID="rv" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brauns" toID="berner" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brauns" toID="cent" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="drink" toID="smoke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="drink" toID="bleak" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="drink" toID="day&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="drink" toID="trivial" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="smoke" toID="drink" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="smoke" toID="bleak" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="smoke" toID="day&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="smoke" toID="trivial" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cent" toID="nationally" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cent" toID="smoke" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cent" toID="drink" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="cent" toID="bleak" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="venturing" toID="md" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="venturing" toID="rohrersville" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="venturing" toID="adjusted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="venturing" toID="gallon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="venturing" toID="southwind" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="venturing" toID="surging" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="venturing" toID="dragged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="venturing" toID="gasoline" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="venturing" toID="costco" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="costco" toID="locations" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="costco" toID="venturing" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="costco" toID="leader" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="costco" toID="baron" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gasoline" toID="md" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gasoline" toID="rohrersville" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gasoline" toID="adjusted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gasoline" toID="gallon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rohrersville" toID="md" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rohrersville" toID="adjusted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rohrersville" toID="impala" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rohrersville" toID="omni" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rohrersville" toID="venturing" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rohrersville" toID="nationally" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rohrersville" toID="cent" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rohrersville" toID="johnson" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="rohrersville" toID="gasoline" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="johnson" toID="maligned" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="johnson" toID="regretting" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="johnson" toID="abuse" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="johnson" toID="hurled" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="omni" toID="impala" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="omni" toID="md" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="omni" toID="rohrersville" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="omni" toID="adjusted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="impala" toID="omni" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="impala" toID="md" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="impala" toID="rohrersville" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="impala" toID="adjusted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="md" toID="rohrersville" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="md" toID="adjusted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="md" toID="impala" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="md" toID="omni" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="md" toID="venturing" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="md" toID="nationally" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="md" toID="cent" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="md" toID="johnson" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="md" toID="gasoline" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="preference" toID="surging" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="preference" toID="southwind" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="preference" toID="dragged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="preference" toID="fleet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="preference" toID="encounter" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="preference" toID="ends" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="preference" toID="announce" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="preference" toID="fifty" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="preference" toID="mobility" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mobility" toID="freedom" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mobility" toID="architect" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mobility" toID="patten" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mobility" toID="cityscape" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fifty" toID="attracting" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fifty" toID="tourists" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fifty" toID="scenic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fifty" toID="beartooth" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="announce" toID="preferred" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="announce" toID="eis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="announce" toID="digging" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="announce" toID="tunnels" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ends" toID="disrupting" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ends" toID="haze" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ends" toID="punched" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="ends" toID="acquire" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="encounter" toID="km" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="encounter" toID="metropolis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="encounter" toID="villages" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="encounter" toID="southwind" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="adjusted" toID="md" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="adjusted" toID="rohrersville" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="adjusted" toID="venturing" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="adjusted" toID="impala" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="adjusted" toID="omni" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="adjusted" toID="automotive" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="adjusted" toID="owning" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="adjusted" toID="nationally" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="adjusted" toID="fleet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="southwind" toID="dragged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="southwind" toID="fleet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="southwind" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="southwind" toID="metropolis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="southwind" toID="surging" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="southwind" toID="encounter" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="southwind" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="southwind" toID="brought" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="southwind" toID="venturing" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="dragged" toID="fleet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="dragged" toID="southwind" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="dragged" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="dragged" toID="metropolis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="dragged" toID="surging" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="dragged" toID="gallon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="dragged" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="dragged" toID="adjusted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="dragged" toID="encounter" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fleet" toID="dragged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fleet" toID="southwind" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fleet" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fleet" toID="surging" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fleet" toID="metropolis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fleet" toID="adjusted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fleet" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fleet" toID="gallon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fleet" toID="owning" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="suvs" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="brought" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="accords" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="camrys" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="japanese" toID="escort" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="metropolis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="southwind" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="fleet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="dragged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="panel&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="encounter" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="km" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="brought" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="guggenheim" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="inspiration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="york&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="snarl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="downsized" toID="brought" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="calculated" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="mileage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="recorders" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="timetable" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="unrealistic" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="researchers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="whitty" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="gps" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="reader" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="rover" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="download" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="experiment" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="task" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="devices" toID="force&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="brought" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="demonstration" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="fleet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="southwind" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="metropolis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="dragged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="encounter" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="salem" toID="panel&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="devices" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="calculated" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="researchers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="force&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="oregon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="reader" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="recording" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="download" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="task" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="whitty" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="data" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="recorders" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="mileage" toID="timetable" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="data" toID="discourage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="data" toID="displayed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="data" toID="download" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="data" toID="tank" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="data" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="data" toID="reader" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="data" toID="fetched" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="data" toID="hummer" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="data" toID="mileage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="hummer" toID="data" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="hummer" toID="hybrid" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="hummer" toID="discourage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="hummer" toID="introduction" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tank" toID="displayed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tank" toID="pump" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tank" toID="subtracts" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tank" toID="reader" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="discourage" toID="treats" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="discourage" toID="hagerbaumer" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="discourage" toID="data" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="discourage" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="fuel" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="mileage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="cars" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="gallon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="tax" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="tank" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="pump" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="data" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="download" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="gasoline" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="devices" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="spelled" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gas" toID="oregon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="spelled" toID="underlying" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="spelled" toID="guzzlers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="spelled" toID="intact" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="spelled" toID="comparison" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="spelled" toID="burden" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="spelled" toID="caprices" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="spelled" toID="tow" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="spelled" toID="pump" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="spelled" toID="saturn" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="saturn" toID="sl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="saturn" toID="tow" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="saturn" toID="intact" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="saturn" toID="kent" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tow" toID="saturn" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tow" toID="sl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tow" toID="intact" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tow" toID="kent" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="caprices" toID="impalas" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="caprices" toID="chevrolets" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="caprices" toID="day&apos;s" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="caprices" toID="trivial" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="burden" toID="guzzlers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="burden" toID="caprices" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="burden" toID="comparison" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="burden" toID="trivial" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="comparison" toID="intact" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="comparison" toID="guzzlers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="comparison" toID="tow" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="comparison" toID="burden" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="intact" toID="comparison" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="intact" toID="tow" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="intact" toID="saturn" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="intact" toID="sl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guzzlers" toID="burden" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guzzlers" toID="comparison" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guzzlers" toID="caprices" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="guzzlers" toID="simulator" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="underlying" toID="spelled" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="underlying" toID="intact" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="underlying" toID="comparison" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="underlying" toID="guzzlers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tax" toID="mileage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tax" toID="download" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tax" toID="calculated" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tax" toID="gas" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tax" toID="researchers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tax" toID="recording" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tax" toID="task" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tax" toID="consumers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tax" toID="devices" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="downsized" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="crammed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="endure" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="japanese" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="sealed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="devastating" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="malaise" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="brought" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="snarl" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="vega" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="accords" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="camrys" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="demonstration" toID="guggenheim" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="surging" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="introduction" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="fleet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="fuel" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="venturing" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="dragged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="gasoline" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="southwind" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="adjusted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="cars" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="shifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="md" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="gallon" toID="rohrersville" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="fleet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="dragged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="gallon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="southwind" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="surging" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="cars" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="salem" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="fuel" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="brought" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="owning" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="introduction" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="metropolis" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="gasoline" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="miles" toID="efficiency" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="efficiency" toID="tougher" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="efficiency" toID="fleet" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="efficiency" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="efficiency" toID="dragged" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="efficiency" toID="fuel" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="efficiency" toID="folks" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="efficiency" toID="oil" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="efficiency" toID="owning" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="efficiency" toID="represented" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oil" toID="arab" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oil" toID="foreign" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oil" toID="reduces" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="oil" toID="stemmed" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="folks" toID="fuel" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="folks" toID="efficiency" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="folks" toID="tougher" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="folks" toID="ers" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tougher" toID="efficiency" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tougher" toID="sends" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tougher" toID="hate" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="tougher" toID="math" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="cars" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="gallon" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="miles" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="gas" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="introduction" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="mileage" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="devices" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="calculated" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="folks" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="shifted" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="gasoline" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="tank" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="owning" type="1" visible="true" color="FF0000"/>
+        <EDGE fromID="fuel" toID="efficiency" type="1" visible="true" color="FF0000"/>
+    </EDGESET>
+    <PARAMETERS>
+        <PARAM name="offsetX" value="0"/>
+        <PARAM name="offsetY" value="0"/>
+        <PARAM name="rotateSB" value="0"/>
+        <PARAM name="zoomSB" value="0"/>
+    </PARAMETERS>
+</TOUCHGRAPH_LB>

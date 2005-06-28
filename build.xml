@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<project default="compile" basedir=".">
+
+
+    <property name="base" value="." />
+    <property name="src" value="${base}/src" />
+    <property name="lib" value="${base}/lib" />
+    <property name="build" value="${base}/classes" />
+    <property name="doctime" value="2005"/>
+
+
+    <path id="classpath">
+        <fileset dir="${lib}">
+            <include name="**/*.jar"/>
+        </fileset>
+        <pathelement location="${build}"/>
+    </path>
+
+
+    <target name="compile">
+        <mkdir dir="${build}" />
+        <javac classpathref="classpath" srcdir="${src}" destdir="${build}" debug="on">
+            <include name="**/*.java" />
+        </javac>
+        <copy todir="${build}" >
+            <fileset dir="${src}" >
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+
+
+    <target name="jar">
+        <unjar src="${lib}/nanoxml-2.2.3.jar" dest="${build}"/>
+        <jar destfile="infomap.jar">
+            <fileset dir="${build}"/>
+            <manifest>
+                <attribute name="Main-Class" value="org.pgist.nlp.GraphGenerator"/>
+            </manifest>
+        </jar>
+    </target>
+
+
+</project>
+
