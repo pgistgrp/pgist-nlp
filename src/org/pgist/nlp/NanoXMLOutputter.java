@@ -3,11 +3,11 @@ package org.pgist.nlp;
 import java.awt.Color;
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import net.n3.nanoxml.XMLElement;
 import net.n3.nanoxml.XMLWriter;
@@ -31,20 +31,21 @@ public class NanoXMLOutputter {
     };//colors
     
     
-    public static void output(Map map, List vertexList, String fileName) {
+    public void output(Map map, List vertexList, String fileName) {
+        //The top level element
         XMLElement tglbXML = new XMLElement("TOUCHGRAPH_LB");
         tglbXML.setAttribute("version", "1.20");
         
+        //the node set
         XMLElement nodeSet = new XMLElement("NODESET");                
         tglbXML.addChild(nodeSet);
         
+        //the edge set
         XMLElement edgeSet = new XMLElement("EDGESET");
         tglbXML.addChild(edgeSet);
         
-        XMLElement parameters = new XMLElement("PARAMETERS");
-        tglbXML.addChild(parameters);
         
-
+        //create node (vertex) section
         for (Iterator iter = map.keySet().iterator(); iter.hasNext();) {
             String key = (String) iter.next();
             Word one = (Word) map.get(key);
@@ -53,6 +54,7 @@ public class NanoXMLOutputter {
         }//for iter
         
         
+        //create edge section
         for (int i=0; i<vertexList.size(); i++) {
             List edgeList = (List) vertexList.get(i);
             Word first = (Word) edgeList.get(0);
@@ -64,8 +66,38 @@ public class NanoXMLOutputter {
         }//for i
         
         
+        //create parameter section
+        XMLElement parameters = new XMLElement("PARAMETERS");
+        tglbXML.addChild(parameters);
+        XMLElement param = new XMLElement("PARAM");
+        param.setAttribute("name", "offsetX");
+        param.setAttribute("value", "0");
+        parameters.addChild(param);
+        param = new XMLElement("PARAM");
+        param.setAttribute("name", "offsetY");
+        param.setAttribute("value", "0");
+        parameters.addChild(param);
+        param = new XMLElement("PARAM");
+        param.setAttribute("name", "rotateSB");
+        param.setAttribute("value", "0");
+        parameters.addChild(param);
+        param = new XMLElement("PARAM");
+        param.setAttribute("name", "zoomSB");
+        param.setAttribute("value", "0");
+        parameters.addChild(param);
+        
+        
+        //output to file
         try {
             OutputStream out = new BufferedOutputStream(new FileOutputStream(fileName));
+            
+            //dtd section
+            InputStream prependDTD = getClass().getResourceAsStream("/TG_Prepend_DTD.xml");
+            int c; //Slow, but gets the job done for small files
+            while((c = prependDTD.read())!=-1) {
+                out.write(c);
+            }
+            prependDTD.close();
             
             XMLWriter writer = new XMLWriter(out);
             writer.write(tglbXML, true);
@@ -77,7 +109,7 @@ public class NanoXMLOutputter {
     }
     
     
-    private static XMLElement createEdgeNode(Word from, Word to) {
+    private XMLElement createEdgeNode(Word from, Word to) {
         XMLElement edgeElt = new XMLElement("EDGE");                
         edgeElt.setAttribute("fromID", from.getName());
         edgeElt.setAttribute("toID", to.getName());
@@ -89,7 +121,7 @@ public class NanoXMLOutputter {
     }
 
 
-    private static XMLElement createVertexNode(Word word) {
+    private XMLElement createVertexNode(Word word) {
         XMLElement nodeElt = new XMLElement("NODE");
         nodeElt.setAttribute("nodeID", word.getName());
         
@@ -126,7 +158,7 @@ public class NanoXMLOutputter {
     }
 
 
-    private static String encodeColor(Color c) {
+    private String encodeColor(Color c) {
         if (c == null) return null;        
         int rgb = c.getRGB()&0xffffff;
         String zeros = "000000";

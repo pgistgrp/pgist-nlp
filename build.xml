@@ -31,7 +31,7 @@
     </target>
 
 
-    <target name="jar">
+    <target name="jar" depends="compile">
         <unjar src="${lib}/nanoxml-2.2.3.jar" dest="${build}"/>
         <jar destfile="infomap.jar">
             <fileset dir="${build}"/>
