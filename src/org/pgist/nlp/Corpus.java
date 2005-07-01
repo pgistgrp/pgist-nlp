@@ -69,7 +69,7 @@ public class Corpus {
         while ((line = reader.readLine())!=null) {
             String[] s = line.trim().split(":");
             if (s[0]==null || s[1]==null) continue;
-            Word newWord = new Word();
+            Word newWord = new Word(word);
             newWord.setName(s[0]);
             newWord.setScore(Float.parseFloat(s[1]));
             newWord.setLevel(newLevel);

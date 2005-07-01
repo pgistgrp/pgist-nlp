@@ -94,7 +94,7 @@ public class GraphGenerator {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         
         //origin is the first word to be associated
-        Word origin = new Word();
+        Word origin = new Word(null);
         origin.setScore(1.0f);
         System.out.println("Please input the beginning word:");
         try {
@@ -106,9 +106,18 @@ public class GraphGenerator {
         
         Corpus corpus = new Corpus(corpusName, null);
         
-        //map is used to exclude the duplicated word, and used to export nodes later
+        /*
+         * map is used to exclude the duplicated word, and used to export nodes later
+         */
         Map map = new HashMap(1024);
         map.put(origin.getName(), origin);
+        
+        /*
+         * nodeList contains the same objects as in map, but all objects are in the
+         * order of insertion.
+         */
+        List nodeList = new ArrayList(1024);
+        nodeList.add(origin);
         
         /*
          * stack is to trace recursive invoking of vertexes
@@ -153,6 +162,7 @@ public class GraphGenerator {
                     if (!map.containsKey(word.getName())) {
                         //the first time to appear of the word
                         map.put(word.getName(), word);
+                        nodeList.add(word);
                     }
                     
                 }//for i
@@ -166,7 +176,7 @@ public class GraphGenerator {
          * output to external files
          */
         NanoXMLOutputter outputter = new NanoXMLOutputter();
-        outputter.output(map, vertexList, outputFile);
+        outputter.output(nodeList, vertexList, outputFile);
         
     }//main()
     

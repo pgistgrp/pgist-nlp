@@ -5,9 +5,7 @@ import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 
 import net.n3.nanoxml.XMLElement;
 import net.n3.nanoxml.XMLWriter;
@@ -21,17 +19,7 @@ import net.n3.nanoxml.XMLWriter;
 public class NanoXMLOutputter {
 
     
-    private static String[] colors = {
-        "606060",
-        "0000E0",
-        "A04000",
-        "D00000",
-        "FF00FF",
-        "FF0000"
-    };//colors
-    
-    
-    public void output(Map map, List vertexList, String fileName) {
+    public void output(List nodeList, List vertexList, String fileName) {
         //The top level element
         XMLElement tglbXML = new XMLElement("TOUCHGRAPH_LB");
         tglbXML.setAttribute("version", "1.20");
@@ -46,12 +34,11 @@ public class NanoXMLOutputter {
         
         
         //create node (vertex) section
-        for (Iterator iter = map.keySet().iterator(); iter.hasNext();) {
-            String key = (String) iter.next();
-            Word one = (Word) map.get(key);
+        for (int i=0; i<nodeList.size(); i++) {
+            Word one = (Word) nodeList.get(i);
             XMLElement nodeElt = createVertexNode(one);
             nodeSet.addChild(nodeElt);
-        }//for iter
+        }//for i
         
         
         //create edge section
@@ -134,9 +121,17 @@ public class NanoXMLOutputter {
         XMLElement nodeLabel = new XMLElement("NODE_LABEL");
         nodeLabel.setAttribute("label", word.getName());
         nodeLabel.setAttribute("shape", "3");
-        nodeLabel.setAttribute("backColor", colors[word.getLevel()]);
-        nodeLabel.setAttribute("textColor", encodeColor(Color.black));
-        nodeLabel.setAttribute("fontSize", "16");
+        Word parent = word.getParent();
+        Color mycolor = null;
+        if (parent==null) {//root
+            mycolor = Color.darkGray;
+        } else {
+            mycolor = brighter(parent.getColor(), 0.65f);//word.getScore());
+        }
+        word.setColor(mycolor);
+        nodeLabel.setAttribute("backColor", encodeColor(mycolor));
+        nodeLabel.setAttribute("textColor", encodeColor(Color.red));
+        nodeLabel.setAttribute("fontSize", "12");
         nodeElt.addChild(nodeLabel);
         
         /*
@@ -167,4 +162,23 @@ public class NanoXMLOutputter {
     }
 
 
+    public static Color brighter(Color color, float factor) {
+        int r = color.getRed();
+        int g = color.getGreen();
+        int b = color.getBlue();
+
+        int i = (int)(1.0/(1.0-factor));
+        if ( r == 0 && g == 0 && b == 0) {
+           return new Color(i, i, i);
+        }
+        if ( r > 0 && r < i ) r = i;
+        if ( g > 0 && g < i ) g = i;
+        if ( b > 0 && b < i ) b = i;
+
+        return new Color(Math.min((int)(r/factor), 255),
+                         Math.min((int)(g/factor), 255),
+                         Math.min((int)(b/factor), 255));
+    }
+    
+    
 }
