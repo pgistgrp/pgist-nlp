@@ -130,6 +130,11 @@ public class GraphGenerator {
                 
                 //associate word
                 List edgeList = corpus.associate(oneWord, depths[oneWord.getLevel()]);
+                System.out.println(
+                        "find " + (edgeList.size()-1)
+                        +" words in level " + (oneWord.getLevel()+1) +
+                        " related to word "+oneWord.getName()
+                );
                 if (edgeList.size()==0) continue;
                 vertexList.add(edgeList);
                 
